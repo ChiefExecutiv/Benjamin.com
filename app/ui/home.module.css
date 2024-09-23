@@ -1,0 +1,17 @@
+.article {
+    color: #333;
+    
+}
+
+.article h2 {
+    font-weight: 700;
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+.graytext {
+    color: #7b808a;
+}

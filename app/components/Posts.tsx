@@ -1,11 +1,12 @@
 import { getSortedPostsData } from "@/lib/posts"
 import ListItem from "./ListItem"
+import { GeistMono } from 'geist/font/mono';
 
 export default function Posts() {
     const posts = getSortedPostsData()
 
     return (
-        <main className="max-w-2xl font-mono m-auto mb-10 text-sm">
+        <main className={`${GeistMono.className} max-w-2xl m-auto mb-10 text-sm`}>
         <header className="text-gray-500 dark:text-gray-600 flex items-center text-xs">
           <button className="w-12 h-9 text-left text-gray-700 dark:text-gray-400">
             date

@@ -3,6 +3,7 @@ import { getPostData, getSortedPostsData } from "@/lib/posts";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import styles from '@/app/ui/home.module.css';
+import { GeistMono } from "geist/font/mono";
 
 export function generateMetadata({ params }: { params: { postId: string } }) {
 
@@ -33,9 +34,9 @@ export default async function Post({ params }: { params: { postId: string } }) {
     const pubDate = getFormattedDate(date, true);
 
     return (
-        <main className="px-6 prose prose-xl prose-slate dark:prose-invert max-auto">
+        <main className="prose prose-xl prose-slate dark:prose-invert max-auto">
             <h1 className="text-2xl font-bold mt-1 mb-1 dark:text-gray-100">{title}</h1>
-            <p className="mt-0">
+            <p className={`${GeistMono.className} text-xs mt-0`}>
                 {pubDate}
             </p>
             <article className={styles.article} dangerouslySetInnerHTML={{ __html: contentHtml }} />

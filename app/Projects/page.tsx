@@ -11,11 +11,11 @@ const projects = [
     githubLink: "https://chiefexecutiv.github.io/Uganda-Budget-Sankey/",
   },
   {
-    title: "Image Segmentation Model",
-    description: "A deep learning model I created for medical image segmentation and diagnosis. A demo of machine learning in medicine.",
-    image: "/avatars/IPYNB(Screenshot).png",
-    technologies: ["Python", "Pytorch", "Detectron"],
-    githubLink: "https://github.com/ChiefExecutiv/Ben_Detectron/blob/main/Ben_Detectron%20(1).ipynb",
+    title: "English to Luganda Translator",
+    description: "A Machine Translation implementation for translating English to Luganda. Adapted from the Transformer Architecture",
+    image: "/avatars/Screenshot (203).png",
+    technologies: ["Python", "Tensorflow", "Keras"],
+    githubLink: "https://github.com/ChiefExecutiv/English-Luganda/blob/main/Translate_tfmr.py",
   },
 ]
 

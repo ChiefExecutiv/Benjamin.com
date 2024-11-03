@@ -4,15 +4,29 @@ import "./globals.css";
 import { Header } from "./header";
 import { Footer } from "./footer";
 import { GeistSans } from 'geist/font/sans';
-import { GeistMono } from 'geist/font/mono';
+
 
 
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Kawuki Benjamin David | Portfolio",
-  description: "Benjamin is a Ugandan National interested in and learning computer programming and Economics",
+  description: "Kawuki Benjamin David: A Ugandan national with a keen interest in technology and economics.",
+  keywords: ["Kawuki Benjamin David", "portfolio", "Uganda", "technology", "economics"],
+  openGraph: {
+    title: "Kawuki Benjamin David | Portfolio",
+    description: "Kawuki Benjamin David: A Ugandan national with a keen interest in technology and economics.",
+    url: "https://benjamincom.vercel.app/",
+    siteName: "Benjamin Kawuki's Site",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    site: "@chiefexecutive0",
+    creator: "@chiefexecutive0",
+  }
 };
+
 
 export default function RootLayout({
   children,

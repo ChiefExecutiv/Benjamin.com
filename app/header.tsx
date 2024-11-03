@@ -3,6 +3,7 @@ import { Logo } from "./logo";
 import ThemeToggle from "./ToggleTheme";
 import { GeistMono } from 'geist/font/mono';
 
+
 export function Header() {
     return (
       <header className="flex mb-5 md:mb-10 items-center">
@@ -12,16 +13,16 @@ export function Header() {
         
           <Link
             href="/About"
-            className="inline-flex hover:bg-gray-200 dark:hover:bg-[#313131] active:bg-gray-300 dark:active:bg-[#242424] rounded-sm p-2 transition-[background-color]"
+            className="inline-flex flex-col gap-1 hover:bg-gray-200 dark:hover:bg-[#313131] active:bg-gray-300 dark:active:bg-[#242424] rounded-sm p-2 transition-[background-color]"
           >
             About
           </Link>
 
           <Link
-            href="/Dashboard"
-            className="inline-flex hover:bg-gray-200 dark:hover:bg-[#313131] active:bg-gray-300 dark:active:bg-[#242424] rounded-sm p-2 transition-[background-color]"
+            href="/Projects"
+            className="inline-flex flex-col gap-1 hover:bg-gray-200 dark:hover:bg-[#313131] active:bg-gray-300 dark:active:bg-[#242424] rounded-sm p-2 transition-[background-color]"
           >
-            Projects
+             Projects
           </Link>
           {/*<a
             href="#"

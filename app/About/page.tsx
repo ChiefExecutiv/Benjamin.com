@@ -6,14 +6,14 @@ export default function About() {
             <h1 className="font-bold my-5">About Me</h1>
 
             <p className="">
-                I'm Benjamin Kawuki David, trying to find my place in the world.
+                I'm Benjamin Kawuki David, a student of economics.
                 I spend considerable time learning, exploring, as Steve Jobs put it "Find something you love". 
                 In that case, I love a lot of things. 
                 I have a vast range of interests, from computers, computer software and economics.
             </p>
 
             <p className="my-5">
-                Although most of my projects and work revolve around economic modelling, algorithm design 
+                A lot of my projects and work revolve around economic modelling, algorithm design 
                 especially in the machine learning department. 
                 I firmly believe in using the best tools to ensure welfare and opportunity for all humans.
             </p>

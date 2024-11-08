@@ -9,18 +9,20 @@ export function Header() {
       <header className="flex mb-5 md:mb-10 items-center">
         <Logo />
   
-        <nav className={`${GeistMono.className} text-xs grow justify-end items-center flex gap-1 md:gap-3`}>
+        <nav className={`${GeistMono.className} text-xs grow justify-end items-center flex gap-2 md:gap-3 font-medium`}>
         
           <Link
             href="/About"
-            className="inline-flex flex-col gap-1 hover:bg-gray-200 dark:hover:bg-[#313131] active:bg-gray-300 dark:active:bg-[#242424] rounded-sm p-2 transition-[background-color]"
+            className="inline-flex flex-col gap-1 text-blue-700 underline decoration-blue-700 decoration-1 underline-offset-4 font-medium"
           >
-            About
+            About 
           </Link>
+          
+          /
 
           <Link
             href="/Projects"
-            className="inline-flex flex-col gap-1 hover:bg-gray-200 dark:hover:bg-[#313131] active:bg-gray-300 dark:active:bg-[#242424] rounded-sm p-2 transition-[background-color]"
+            className="inline-flex flex-col gap-1 text-blue-700 underline decoration-blue-700 decoration-1 underline-offset-4 font-medium"
           >
              Projects
           </Link>
@@ -29,6 +31,16 @@ export function Header() {
             target="_blank"
             className="inline-flex hover:bg-gray-200 dark:hover:bg-[#313131] active:bg-gray-300 dark:active:bg-[#242424] items-center p-2 rounded-sm transition-[background-color] whitespace-nowrap -mr-2"
           >
+
+                    <Link
+            href="/About"
+            className="inline-flex flex-col text-blue-700 underline decoration-blue-700 decoration-1 underline-offset-4  gap-1 hover:bg-gray-200 dark:hover:bg-[#313131] active:bg-gray-300 dark:active:bg-[#242424] rounded-sm p-2 transition-[background-color]
+hover:bg-gray-200 dark:hover:bg-[#313131] active:bg-gray-300 dark:active:bg-[#242424] rounded-sm p-2 transition-[background-color]
+hover:bg-gray-200 dark:hover:bg-[#313131] active:bg-gray-300 dark:active:bg-[#242424] rounded-sm p-2 transition-[background-color]"
+          >
+            About 
+          </Link>
+          
             <TweetIcon style={{ marginRight: 4 }} /> Follow{" "}
             <span className="hidden md:inline">&nbsp;me</span>
           </a>*/}

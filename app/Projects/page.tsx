@@ -50,7 +50,7 @@ export default function ProjectsPage() {
               </div>
             </div>
             <div className="flex justify-start space-x-4 mt-auto ">
-              <Link href={project.githubLink} target="_blank" rel="noopener noreferrer" className={`${GeistMono.className} text-blue-600 text-sm inline-flex items-center text-primary hover:underline mt-1 transition-colors duration-300`}>
+              <Link href={project.githubLink} target="_blank" rel="noopener noreferrer" className={`${GeistMono.className} text-blue-700 text-sm font-medium underline decoration-blue-700 underline-offset-4 inline-flex items-center text-primary hover:underline mt-1 transition-colors duration-300`}>
                 View Project
               </Link>
             </div>

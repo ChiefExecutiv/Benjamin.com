@@ -35,8 +35,8 @@ export default async function Post({ params }: { params: { postId: string } }) {
 
     return (
         <main className="prose prose-xl prose-slate dark:prose-invert max-auto">
-            <h1 className="text-2xl font-bold mt-1 mb-1 dark:text-gray-100">{title}</h1>
-            <p className={`${GeistMono.className} text-xs mt-0`}>
+            <h1 className="text-2xl font-bold mt-1 mb-1 text-black-default dark:text-gray-100">{title}</h1>
+            <p className={`${GeistMono.className} text-xs mt-0 text-black-default`}>
                 {pubDate}
             </p>
             <article className={styles.article} dangerouslySetInnerHTML={{ __html: contentHtml }} />

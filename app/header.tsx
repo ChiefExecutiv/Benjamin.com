@@ -18,7 +18,7 @@ export function Header() {
             About 
           </Link>
           
-          /
+          <span className="text-black-default">/</span>
 
           <Link
             href="/Projects"

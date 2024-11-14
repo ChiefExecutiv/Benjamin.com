@@ -35,7 +35,7 @@ export default function ProjectsPage() {
               alt={`${project.title} preview`} 
               width={500}
               height={500}
-              className="w-full aspect-video object-cover max-h-[300px] rounded-sm"
+              className="w-full aspect-video object-cover max-h-[300px] border border-gray-300"
             />
 
             <div className="space-y-2">
@@ -43,14 +43,18 @@ export default function ProjectsPage() {
               <p className="text-muted-foreground">{project.description}</p>
               <div className="flex flex-wrap gap-2">
                 {project.technologies.map((tech, techIndex) => (
-                  <span key={techIndex} className={`${GeistMono.className} text-xs px-2 py-1 bg-secondary bg-gray-200 text-secondary-foreground rounded-full`}>
-                    {tech}
-                  </span>
+                  <span 
+                  key={techIndex} 
+                  className="text-sm text-gray-600 flex items-center"
+                >
+                  <span className="mr-2">•</span>
+                  {tech}
+                </span>
                 ))}
               </div>
             </div>
             <div className="flex justify-start space-x-4 mt-auto ">
-              <Link href={project.githubLink} target="_blank" rel="noopener noreferrer" className={`${GeistMono.className} text-blue-700 text-sm font-medium underline decoration-blue-700 underline-offset-4 inline-flex items-center text-primary hover:underline mt-1 transition-colors duration-300`}>
+              <Link href={project.githubLink} target="_blank" rel="noopener noreferrer" className={`${GeistMono.className} text-blue-700 text-sm font-medium  inline-flex items-center text-primary hover:underline mt-1 transition-colors duration-300`}>
                 View Project
               </Link>
             </div>

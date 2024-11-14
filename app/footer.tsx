@@ -11,7 +11,7 @@ export function Footer() {
         )
       </div>
       <div>
-        <a target="_blank" href="https://github.com/ChiefExecutiv">
+        <a target="_blank" href="https://github.com/ChiefExecutiv" className="inline-flex flex-col gap-1 text-blue-700 underline decoration-blue-700 decoration-1 underline-offset-4 font-medium">
           Source
         </a>
       </div>

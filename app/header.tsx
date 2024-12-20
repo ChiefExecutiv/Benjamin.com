@@ -10,15 +10,6 @@ export function Header() {
         <Logo />
   
         <nav className={`${GeistMono.className} text-xs grow justify-end items-center flex gap-2 md:gap-3 font-medium`}>
-        
-          <Link
-            href="/About"
-            className="inline-flex flex-col gap-1 text-blue-700 underline decoration-blue-700 decoration-1 underline-offset-4 font-medium"
-          >
-            About 
-          </Link>
-          
-          <span className="text-black-default">/</span>
 
           <Link
             href="/Projects"
@@ -26,6 +17,18 @@ export function Header() {
           >
              Projects
           </Link>
+          
+          <span className="text-black-default">/</span>
+
+          <Link
+            href="/Thoughts"
+            className="inline-flex flex-col gap-1 text-blue-700 underline decoration-blue-700 decoration-1 underline-offset-4 font-medium"
+          >
+            Thoughts
+          </Link>
+          
+
+
           {/*<a
             href="#"
             target="_blank"

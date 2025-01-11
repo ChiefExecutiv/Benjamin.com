@@ -8,7 +8,7 @@ const projects = [
     description: "Dum.E is a small gpt language model trained on a small wikipedia dataset. I made it while learning about the inner workings of Large Language Models.",
     image: "/avatars/DumE.jpg",
     technologies: ["Python,", "PyTorch,", "GoogleColab"],
-    githubLink: "https://github.com/ChiefExecutiv/English-Luganda/blob/main/Translate_tfmr.py",
+    githubLink: "https://github.com/ChiefExecutiv/DumE",
   },
   {
     title: "English-Luganda Translator",

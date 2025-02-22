@@ -3,12 +3,14 @@ import Link from "next/link"
 export default function About() {
     return (
         <article className="" style={{color: "rgb(31 41 55)"}}>
-            <h1 className="font-bold my-5">About Me</h1>
+            <h1 className="font-bold my-5">About</h1>
 
             <p className="">
                 I'm Benjamin Kawuki, a student of economics and computer programmer.
                 I spend considerable time learning, exploring, as Steve Jobs put it "Find something you love". 
-                In that case, I love a lot of things. 
+            </p>
+            
+            <p className="my-5">
                 I have a vast range of interests, from computers, computer software and economics.
             </p>
 

@@ -13,7 +13,7 @@ export function Header() {
 
           <Link
             href="/Projects"
-            className="inline-flex flex-col gap-1 text-blue-700 underline decoration-blue-700 decoration-1 underline-offset-4 font-medium"
+            className="inline-flex flex-col gap-1 text-blue-700 underline decoration-blue-700 decoration-1 underline-offset-4 text-xs"
           >
              Projects
           </Link>
@@ -22,7 +22,7 @@ export function Header() {
 
           <Link
             href="/Thoughts"
-            className="inline-flex flex-col gap-1 text-blue-700 underline decoration-blue-700 decoration-1 underline-offset-4 font-medium"
+            className="inline-flex flex-col gap-1 text-blue-700 underline decoration-blue-700 decoration-1 underline-offset-4 text-s"
           >
             Thoughts
           </Link>

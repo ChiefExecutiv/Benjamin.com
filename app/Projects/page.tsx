@@ -5,8 +5,8 @@ import { GeistMono } from "geist/font/mono"
 const projects = [
   {
     title: "Dum.E",
-    description: "Dum.E is a small gpt language model trained on a small wikipedia dataset. I made it while learning about the inner workings of Large Language Models.",
-    image: "/avatars/DumE.jpg",
+    description: "Dum.E is a minimalist implementation of the gpt-2 architecture trained on a rudimentary dataset.",
+    image: "/avatars/gpt_arch_2.png",
     technologies: ["Python,", "PyTorch,", "GoogleColab"],
     githubLink: "https://github.com/ChiefExecutiv/DumE",
   },
@@ -43,12 +43,12 @@ export default function ProjectsPage() {
               alt={`${project.title} preview`} 
               width={500}
               height={500}
-              className="w-full aspect-video object-cover max-h-[300px]"
+              className="grayscale hover:grayscale-0 transition-all duration-300 w-full aspect-video object-cover max-h-[300px]"
             />
 
             <div className="space-y-2">
               <h2 className="text-xl font-semibold">{project.title}</h2>
-              <p className="text-muted-foreground">{project.description}</p>
+              <p className="text-gray-500">{project.description}</p>
               <div className="flex flex-wrap gap-2">
                 {project.technologies.map((tech, techIndex) => (
                   <span 

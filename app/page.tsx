@@ -11,19 +11,14 @@ export default function About() {
             </p>
             
             <p className="my-5">
-                I have a vast range of interests, from computers, computer software and economics.
+                I've always been curious about the processes and operations of computer software. More so now I've been
+                very interested in emerging technology which compelled me to learn how these tools are made and exactly
+                what processes and calculations bring them to life.
             </p>
 
             <p className="my-5">
-                A lot of my projects and work revolve around economic modelling, algorithm design 
-                especially in machine learning. 
-                I firmly believe in using the best tools to ensure welfare and opportunity for all humans.
-            </p>
-
-            <p className="my-5">
-                "Be not as you are, but as you should be" -- High Evolutionary. 
-                That has been my personal philosophy carrying forward. To better oneself and 
-                become the best version of you possible, that's where I find fulfilment.
+                Currently, I'm a student of Economics at Makerere University Business School. A course which has 
+                given me even further insight into working with and computationally modelling real-world data. 
             </p>
 
             <p className="my-5">

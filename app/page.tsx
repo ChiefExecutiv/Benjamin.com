@@ -7,7 +7,7 @@ export default function About() {
 
             <p className="">
                 I'm Benjamin Kawuki, a student of economics and computer programmer.
-                I spend considerable time learning, exploring, as Steve Jobs put it "Find something you love". 
+                I spend a lot of my time learning, exploring, as Steve Jobs put it "Find something you love". 
             </p>
             
             <p className="my-5">

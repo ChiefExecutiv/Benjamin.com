@@ -1,52 +1,50 @@
-import Link from "next/link";
-import { Logo } from "./logo";
-import ThemeToggle from "./ToggleTheme";
-import { GeistMono } from 'geist/font/mono';
+'use client'
+
+import Link from "next/link"
+import { Logo } from "./logo"
+import { usePathname } from "next/navigation"
+import { GeistMono } from 'geist/font/mono'
 
 
+function LinkItem(props: React.ComponentProps<typeof Link>) {
+  const pathname = usePathname()
+  const href = props.href
+
+  if (typeof href !== 'string') {
+    throw new Error('`href` must be a string')
+  }
+
+  const isActive = pathname === href || pathname.startsWith(href + '/')
+
+  return (
+    <Link {...props} className={`${
+      isActive 
+      ? 'no-underline'
+      : 'underline decoration-blue-700'} 
+      inline-flex flex-col gap-1 text-blue-700 decoration-1 underline-offset-4 text-xs`} />
+  )
+}
+
+/*<Link {...props} className={`${isActive ? 'no-underline': 'underline decoration-blue-700'} inline-flex flex-col gap-1 text-blue-700  decoration-1 underline-offset-4 text-xs`} />*/
 export function Header() {
     return (
-      <header className="flex mb-5 md:mb-10 items-center">
+      <header className='flex mb-5 md:mb-10 items-center'>
         <Logo />
   
         <nav className={`${GeistMono.className} text-xs grow justify-end items-center flex gap-2 md:gap-3 font-medium`}>
 
-          <Link
-            href="/Projects"
-            className="inline-flex flex-col gap-1 text-blue-700 underline decoration-blue-700 decoration-1 underline-offset-4 text-xs"
-          >
-             Projects
-          </Link>
+          <LinkItem href='/Projects'>
+              Projects
+          </LinkItem>
           
-          <span className="text-black-default">/</span>
+          <span className='text-black-default'>/</span>
 
-          <Link
-            href="/Thoughts"
-            className="inline-flex flex-col gap-1 text-blue-700 underline decoration-blue-700 decoration-1 underline-offset-4 text-s"
-          >
-            Thoughts
-          </Link>
-          
+          <LinkItem href='/Thoughts'>
+              Thoughts
+          </LinkItem>
 
-
-          {/*<a
-            href="#"
-            target="_blank"
-            className="inline-flex hover:bg-gray-200 dark:hover:bg-[#313131] active:bg-gray-300 dark:active:bg-[#242424] items-center p-2 rounded-sm transition-[background-color] whitespace-nowrap -mr-2"
-          >
-
-                    <Link
-            href="/About"
-            className="inline-flex flex-col text-blue-700 underline decoration-blue-700 decoration-1 underline-offset-4  gap-1 hover:bg-gray-200 dark:hover:bg-[#313131] active:bg-gray-300 dark:active:bg-[#242424] rounded-sm p-2 transition-[background-color]
-hover:bg-gray-200 dark:hover:bg-[#313131] active:bg-gray-300 dark:active:bg-[#242424] rounded-sm p-2 transition-[background-color]
-hover:bg-gray-200 dark:hover:bg-[#313131] active:bg-gray-300 dark:active:bg-[#242424] rounded-sm p-2 transition-[background-color]"
-          >
-            About 
-          </Link>
-          
-            <TweetIcon style={{ marginRight: 4 }} /> Follow{" "}
-            <span className="hidden md:inline">&nbsp;me</span>
-          </a>*/}
+          {/*  <TweetIcon style={{ marginRight: 4 }} /> Follow{" "}
+            <span className="hidden md:inline">&nbsp;me</span>*/}
         </nav>
       </header>
     );
